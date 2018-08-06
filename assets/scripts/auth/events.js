@@ -2,7 +2,7 @@
 const getFormFields = require('../../../lib/get-form-fields.js')
 const authUi = require('./ui.js')
 const authApi = require('./api.js')
-// const assignmentEvents = require('../assignment/events.js')
+const assignmentEvents = require('../assignment/events.js')
 
 const onSignUp = function (event) {
   event.preventDefault()
@@ -15,9 +15,10 @@ const onSignUp = function (event) {
 const onSignIn = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
+  console.log('data is', data)
   authApi.signIn(data)
     .then(authUi.signInSuccess)
-    // .then(itemEvents.onGetItems)
+    .then(assignmentEvents.onGetAssignments)
     .catch(authUi.signInError)
 }
 

@@ -6,8 +6,8 @@
 // use require without a reference to ensure a file is bundled
 // require('./example')
 const authEvents = require('./auth/events')
-// const assignmentEvents = require('./assignment/events')
-// const assignmentUi = require('./assignment/ui')
+const assignmentEvents = require('./assignment/events')
+const assignmentUi = require('./assignment/ui')
 const authUi = require('./auth/ui')
 
 $(() => {
@@ -18,12 +18,12 @@ $(() => {
   $('#sign-out').on('click', authEvents.onSignOut)
 
   // Item Events
-  // $('#create-item-form').on('submit', assignmentEvents.onCreateItem)
+  $('#create-item-form').on('submit', assignmentEvents.onCreateAssignment)
 
   // Handlebar Event Handlers
-  // assignmentEvents.addHandlers()
+  assignmentEvents.addHandlers()
 
   // Reset UI Handling Elements
-  // $('.content-button').on('click', assignmentUi.resetUiHandleing)
+  $('.content-button').on('click', assignmentUi.resetUiHandleing)
   $('.menu').on('click', authUi.resetAuth)
 })

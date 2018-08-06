@@ -32,20 +32,24 @@
       </nav>
 
       <div class="row article settings1 view2">
-          <h3 id='itemTitle'>Assignments</h3> <br> <br>
-      </div>
-          <div class="row article settings1 view2">
+        <div class="row article settings2">
+          <div class='col-md-1 box'></div>
+          <div class='col-md-6 box'><h3 id='assignmentTitle'>Assignments</h3></div>
+          <div class='col-md-3 box'></div>
+          <div class='col-md-1 box'>
             <button type="button"  class="btn btn-primary content-button" data-toggle="modal" data-target="#createItemModal">
-            Create an Assignment
+            Create Assignment
             </button>
-     </div>
-
+          </div>
+          <div class='col-md-1 box'></div>
+        </div>
         <div class="row article settings3">
           <div class='col-md-1 box'></div>
           <div id='assignmentList' class='col-md-8 box'></div>
           <div class='col-md-3 box'></div>
         </div>
       </div>
+
       <div class="modal fade" id="signOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -166,15 +170,15 @@
               <form id="create-item-form" class="update-form" data-id="{{item.id}}">
                  <div class="form-group">
                   <label for="formGroupExampleInput">Title</label>
-                  <input name = "item[name]" placeholder="Item Name" type="text"  class="form-control">
+                  <input name = "assignment[title]" placeholder="Title" type="text"  class="form-control">
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Description</label>
-                  <input  name ="item[quantity]" class="form-control" type="text" placeholder="Quantity">
+                  <input  name ="assignment[description]" class="form-control" type="text" placeholder="Description">
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput">Status</label>
-                  <input name ="item[price]" placeholder="Price" type="text" class="form-control">
+                  <input name ="assignment[status]" placeholder="Status" type="text" class="form-control">
                 </div>
                 <button type="submit" id="create-post-submit-button" class="create-submit-button btn btn-primary">Create</button>
                 </form>
