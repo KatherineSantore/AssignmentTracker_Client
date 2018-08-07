@@ -12,15 +12,6 @@ const createAssignmentError = function () {
   $('#createModalLabel').html('Something went wrong creating the assignment try again!')
 }
 
-// const getAssignmentsSuccess = (data) => {
-//   const yourAssignments = data.assignments.filter((assignment) => {
-//     if (assignment.owner === store.user.id) {
-//       return assignment
-//     }
-//   })
-//   const showNewAssignmentsHtml = showAssignmentsTemplate({ assignments: yourAssignments })
-//   $('#assignmentList').html(showNewAssignmentsHtml)
-// }
 const getAssignmentsSuccess = (data) => {
   const showNewAssignmentsHtml = showAssignmentsTemplate({ assignments: data.assignments })
   $('#assignmentList').html(showNewAssignmentsHtml)
@@ -36,8 +27,8 @@ const deleteAssignmentError = function () {
   $('#assignmentTitle').html('Something went wrong deleting assignment try again!')
 }
 
-const updateAssignmentSuccess = function (itemId) {
-  $(`[data-id="modal${itemId}"]`).modal('hide')
+const updateAssignmentSuccess = function (assignmentId) {
+  $(`[data-id="modal${assignmentId}"]`).modal('hide')
   $('.modal-backdrop').remove()
   $('.update-form')[0].reset()
 }

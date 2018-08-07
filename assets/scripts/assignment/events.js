@@ -21,18 +21,21 @@ const onCreateAssignment = function (event) {
 const onDeleteAssignment = function (event) {
   event.preventDefault()
   assignmentUi.resetUiHandleing()
-  const itemId = $(event.target).attr('data-id')
-  assignmentApi.deleteAssignment(itemId)
+  const assignmentId = $(event.target).attr('data-id')
+  console.log('event.target', event.target)
+  assignmentApi.deleteAssignment(assignmentId)
     .then(onGetAssignments)
-    .catch(assignmentUi.deleteassignmentError)
+    .catch(assignmentUi.deleteAssignmentError)
 }
 
 const onUpdateAssignment = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
-  const itemId = $(event.target).attr('data-id')
-  assignmentApi.updateAssignment(data, itemId)
-    .then(() => assignmentUi.updateassignemntSuccess(itemId))
+  const assignmentId = $(event.target).attr('data-id')
+  console.log('assignmentId', assignmentId)
+  console.log('assignment.id')
+  assignmentApi.updateAssignment(data, assignmentId)
+    .then(() => assignmentUi.updateassignmentSuccess(assignmentId))
     .then(onGetAssignments)
     .catch(assignmentUi.updateAssignmentError)
 }
@@ -53,5 +56,6 @@ module.exports = {
   onCreateAssignment,
   onDeleteAssignment,
   onGetAssignments,
+  onUpdateAssignment,
   addHandlers
 }

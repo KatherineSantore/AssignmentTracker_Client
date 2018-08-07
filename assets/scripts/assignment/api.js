@@ -38,7 +38,7 @@ const getAssignments = function (data) {
 const deleteAssignment = function (assignmentId) {
   return $.ajax({
     method: 'DELETE',
-    url: config.apiUrl + '/assignment/' + assignmentId,
+    url: config.apiUrl + '/assignments/' + assignmentId,
     headers: {
       Authorization: 'Token token=' + store.user.token
     }
