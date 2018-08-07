@@ -10,7 +10,7 @@ body {
 }
 
 footer {
-  background-color: grey;
+  background-color: #4e4e4e;
   bottom: 0;
   color: white;
   height: 20px;
@@ -25,6 +25,21 @@ footer {
 
 h3 {
   color: #dfdfdf;
+}
+
+.col-md-6 {
+background-color: #4e4e4e;
+}
+
+.col-md-3 {
+background-color: #4e4e4e;
+}
+.col-md-1 {
+background-color: #4e4e4e;
+}
+
+#create-button-box {
+background-color: #4e4e4e;
 }
 
 .navbar {
@@ -50,7 +65,7 @@ h3 {
 }
 
 .content-button {
-  background-color: grey;
+  background-color: #ccb3ff;
   border: 1px solid white;
   color: white;
   float: right;
@@ -58,6 +73,14 @@ h3 {
   margin-top: 15px;
 }
 
+.updateButton {
+background-color: #ccb3ff;
+}
+
+.deleteButton {
+  background-color: #ccb3ff;
+  color: red;
+}
 .settings1 {
   background-color: #4e4e4e;
   border: 5px solid grey;
@@ -71,7 +94,7 @@ h3 {
 }
 
 .settings3 {
-  background-color: #dfdfdf;
+  background-color: #ccb3ff;
 }
 
 #menu-title {
