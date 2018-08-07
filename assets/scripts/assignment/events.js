@@ -33,9 +33,8 @@ const onUpdateAssignment = function (event) {
   const data = getFormFields(event.target)
   const assignmentId = $(event.target).attr('data-id')
   console.log('assignmentId', assignmentId)
-  console.log('assignment.id')
   assignmentApi.updateAssignment(data, assignmentId)
-    .then(() => assignmentUi.updateassignmentSuccess(assignmentId))
+    .then(() => assignmentUi.updateAssignmentSuccess(assignmentId))
     .then(onGetAssignments)
     .catch(assignmentUi.updateAssignmentError)
 }
