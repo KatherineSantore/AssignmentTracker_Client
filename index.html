@@ -10,15 +10,12 @@
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     </head>
     <body>
       <nav class="navbar navbar-dark bg-primary">
         <div class="container">
-          <p id='menu-title'>Assignment Tracker<br></p>
+          <p id='menu-title'>Assignment Tracker </p>
+          <img src="public/images/yellowPencil.png" alt="assignment tracker logo" height="100" width="100"><br>
           <p id='sub-menu-title'>Helping You Stay Organized While You Prepare For College</p>
           <button type="button" class="btn btn-primary menu view1" data-toggle="modal" data-target="#signUpModal">
           Sign Up
@@ -183,10 +180,20 @@
                   <input  name ="assignment[description]" class="form-control" type="text" placeholder="Description">
                 </div>
                 <div class="form-group">
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="formGroupExampleInput2">Status</label>
                     <input  name ="assignment[status]" class="form-control" type="text" placeholder="Status">
-                  </div>
+                  </div> -->
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Status</label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Completed">Completed</option>
+                      </select>
+                    </div>
                 <button type="submit" id="create-post-submit-button" class="create-submit-button btn btn-primary">Create</button>
                 </form>
             <div class="modal-footer">
