@@ -42,6 +42,12 @@ In future iterations, I would like to make the confetti fall over the assignment
 boxes and also have the assignment box show somehow that the user has finished.
 <a href="https://imgur.com/kHMKDYq"><img src="https://i.imgur.com/kHMKDYq.jpg" title="source: imgur.com" /></a>
 
+<h3> Set up and Installation Instructions </h3>
+<ol>
+<li>Fork and clone this repository.</li>
+<li>Install dependencies with npm install.</li>
+<li><a href="https://www.npmjs.com/package/confetti-js">NPM install confetti-js.</a></li>
+</ol>
 
 A screenshot of the app looks like this:
 <a href="https://imgur.com/aX1MGXg"><img src="https://i.imgur.com/aX1MGXg.png" title="source: imgur.com" /></a>
