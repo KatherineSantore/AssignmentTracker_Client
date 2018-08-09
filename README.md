@@ -6,12 +6,12 @@ and delete assignments. There is also a special button when a stuent completes a
 that will display a blast of confetti.
 
 <h3> User stories: </h3>
-<ul>
-<ol> As a user I want to see all of my assignments </ol>
-<ol> As a user want to check off assignments that I have completed </ol>
-<ol> As a user I want to create an assignment </ol>
-<ol> As a user I want to update assignments </ol>
-</ul>
+<ol>
+<li> As a user I want to see all of my assignments </li>
+<li> As a user want to check off assignments that I have completed </li>
+<li> As a user I want to create an assignment </li>
+<li> As a user I want to update assignments </li>
+</ol>
 
 
  The backend of this website can be found here:
@@ -25,9 +25,16 @@ and
 https://github.com/KatherineWard/AssignmentTracker_Client
 
 <h3> Technologies used: </h3>
-on the front end were: HTML,  HTML Canvas, CSS, Javascript, JQuery,
-AJAX, Handlebars, and the JQuery library 'confetti.js'.
-
+<ol>
+<li>HTML </li>
+<li>  HTML Canvas </li>
+<li> CSS </li>
+<li>Javascript </li>
+<li> jQuery </li>
+<li>AJAX</li>
+<li> Handlebars </li>
+<li>'confetti.js'(jQuery library)</li>
+</ol>
 In planning for this app, I first created the wireframe (below).
 Then I set out to create the basic CRUD functionality. Lastly, I created styling and CSS animations such as the spinning
 pencil and confetti drop. I used 'confetti.js', a jquery library to implement the confetti.
