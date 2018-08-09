@@ -1,13 +1,18 @@
+<h1> Assignment Tracker </h1>
+
 The Assignment Tracker was created to help students keep track of assignments as they
 work with a tutor or college application coach. Through the app students are able to log in and create, update,
 and delete assignments. There is also a special button when a stuent completes an assignment
 that will display a blast of confetti.
 
-User stories:
-1. As a user I want to see all of my assignments
-2. As a user want to check off assignments that I have completed
-3.As a user I want to create an assignment
-4. As a user I want to update assignments
+<h3> User stories: </h3>
+<ul>
+<ol> As a user I want to see all of my assignments </ol>
+<ol> As a user want to check off assignments that I have completed </ol>
+<ol> As a user I want to create an assignment </ol>
+<ol> As a user I want to update assignments </ol>
+</ul>
+
 
  The backend of this website can be found here:
  https://github.com/KatherineWard/AssignmentTracker_API
@@ -19,7 +24,8 @@ https://katherineward.github.io/AssignmentTracker_Client/
 and
 https://github.com/KatherineWard/AssignmentTracker_Client
 
-Technologies used on the front end were: HTML,  HTML Canvas, CSS, Javascript, JQuery,
+<h3> Technologies used: </h3>
+on the front end were: HTML,  HTML Canvas, CSS, Javascript, JQuery,
 AJAX, Handlebars, and the JQuery library 'confetti.js'.
 
 In planning for this app, I first created the wireframe (below).
