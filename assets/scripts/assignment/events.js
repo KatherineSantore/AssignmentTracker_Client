@@ -1,4 +1,5 @@
 'use strict'
+import "confetti-js"
 const getFormFields = require('../../../lib/get-form-fields.js')
 const assignmentUi = require('./ui.js')
 const assignmentApi = require('./api.js')
@@ -45,10 +46,27 @@ const onOpenUpdateModal = function (event) {
   $(`[data-id="modal${assignmentId}"]`).modal('show')
 }
 
+const confettiSettings = { target: 'my-canvas' }
+const confetti = new ConfettiGenerator(confettiSettings)
+const canvas = $('#my-canvas')
+const confettiRain = function () {
+  $('#my-canvas').show()
+  confetti.render()
+  setTimeout(() => {
+    confetti.clear()
+    $('#my-canvas').hide()
+  }, 5000)
+}
+
+const confettiRainReset = function () {
+  $('my-canvas').show()
+}
+
 const addHandlers = () => {
   $('#assignmentList').on('click', '.deleteButton', onDeleteAssignment)
   $('#assignmentList').on('click', '.updateButton', onOpenUpdateModal)
   $('#assignmentList').on('submit', '.update-form', onUpdateAssignment)
+  $('#assignmentList').on('click', '.confettiButton', confettiRain)
 }
 
 module.exports = {
@@ -56,5 +74,6 @@ module.exports = {
   onDeleteAssignment,
   onGetAssignments,
   onUpdateAssignment,
-  addHandlers
+  addHandlers,
+  confettiRainReset
 }

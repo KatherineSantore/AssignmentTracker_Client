@@ -2,15 +2,19 @@
 {{#each assignments as |assignment|}}
 <div class="handlebars"> <br>
 <ul class="list-group">
+  <div class="titlecard"> <li class="list-group-item">To Do:</li> </div>
   <li class="list-group-item">Title: {{assignment.title}}</li>
   <li class="list-group-item">Description: {{assignment.description}}</li>
   <li class="list-group-item">Status: {{assignment.status}}</li>
   <li class="list-group-item">
     <button type="button" data-id="{{assignment.id}}" class="updateButton btn btn-primary">Update Item</button>
     <button type="button" data-id="{{assignment.id}}" class="deleteButton btn btn-primary">Delete Item</button>
+    <button type="button" data-id="{{assignment.id}}" class="confettiButton btn btn-primary">COMPLETED!</button>
+</div>
   </li>
 </ul>
-</div>
+
+
 <!--  Update Modal Starts Here -->
       <div class="modal fade updateModal" data-id="modal{{assignment.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -48,3 +52,4 @@
 
 
 {{/each}}
+</div>

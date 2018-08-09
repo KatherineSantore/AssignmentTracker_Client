@@ -5,6 +5,7 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
+import 'confetti-js'
 const authEvents = require('./auth/events')
 const assignmentEvents = require('./assignment/events')
 const assignmentUi = require('./assignment/ui')
@@ -17,11 +18,13 @@ $(() => {
   $('#change-password-form').on('submit', authEvents.onChangePW)
   $('#sign-out').on('click', authEvents.onSignOut)
 
-  // Item Events
+  // Assignment Events
   $('#create-item-form').on('submit', assignmentEvents.onCreateAssignment)
 
   // Handlebar Event Handlers
   assignmentEvents.addHandlers()
+
+  // $('#my-canvas').hide()
 
   // Reset UI Handling Elements
   $('.content-button').on('click', assignmentUi.resetUiHandleing)
