@@ -13,7 +13,6 @@ const onGetAssignments = (data) => {
 const onCreateAssignment = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
-  console.log('data is', data)
   assignmentApi.createAssignment(data)
     .then(assignmentUi.createAssignmentSuccess)
     .then(onGetAssignments)
@@ -23,7 +22,6 @@ const onDeleteAssignment = function (event) {
   event.preventDefault()
   assignmentUi.resetUiHandleing()
   const assignmentId = $(event.target).attr('data-id')
-  console.log('event.target', event.target)
   assignmentApi.deleteAssignment(assignmentId)
     .then(onGetAssignments)
     .catch(assignmentUi.deleteAssignmentError)
@@ -33,7 +31,6 @@ const onUpdateAssignment = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
   const assignmentId = $(event.target).attr('data-id')
-  console.log('assignmentId', assignmentId)
   assignmentApi.updateAssignment(data, assignmentId)
     .then(() => assignmentUi.updateAssignmentSuccess(assignmentId))
     .then(onGetAssignments)
