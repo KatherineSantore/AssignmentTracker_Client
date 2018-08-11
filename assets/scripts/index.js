@@ -28,5 +28,6 @@ $(() => {
 
   // Reset UI Handling Elements
   $('.content-button').on('click', assignmentUi.resetUiHandleing)
+  $('.update-close-button').on('click', assignmentUi.resetUiHandleing)
   $('.menu').on('click', authUi.resetAuth)
 })
