@@ -10,6 +10,7 @@ const createAssignmentSuccess = function (data) {
 const createAssignmentError = function () {
   $('#createModalLabel').css('color', 'red')
   $('#createModalLabel').html('Something went wrong creating the assignment try again!')
+  $('#create-item-form')[0].reset()
 }
 
 const getAssignmentsSuccess = (data) => {
@@ -35,6 +36,7 @@ const updateAssignmentSuccess = function (assignmentId) {
 const updateAssignmentError = function () {
   $('.itemUpdateTitle').css('color', 'red')
   $('.itemUpdateTitle').html('Something went wrong updating item try again!')
+  $('.update-form')[0].reset()
 }
 
 const resetUiHandleing = function () {

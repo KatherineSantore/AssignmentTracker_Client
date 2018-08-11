@@ -175,15 +175,15 @@
               <form id="create-item-form" class="update-form" data-id="{{assignment.id}}">
                  <div class="form-group">
                   <label for="formGroupExampleInput">Title</label>
-                  <input name = "assignment[title]" placeholder="Title" type="text"  class="form-control">
+                  <input name = "assignment[title]" placeholder="Title" type="text"  class="form-control" required>
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Description</label>
-                  <input  name ="assignment[description]" class="form-control" type="text" placeholder="Description">
+                  <input  name ="assignment[description]" class="form-control" type="text" placeholder="Description" required>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Status</label>
-                    <input  name ="assignment[status]" class="form-control" type="text" placeholder="Status">
+                    <input  name ="assignment[status]" class="form-control" type="text" placeholder="Status" required>
                 </div>
                 <button type="submit" id="create-post-submit-button" class="create-submit-button btn btn-primary">Create</button>
                 </form>

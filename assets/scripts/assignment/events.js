@@ -43,9 +43,21 @@ const onOpenUpdateModal = function (event) {
   $(`[data-id="modal${assignmentId}"]`).modal('show')
 }
 
+// const confettiSettings = { target: 'my-canvas' };
+// const confetti = new ConfettiGenerator(confettiSettings);
+// const canvas = document.getElementById('my-canvas');
+
+// const confettiRain = function () {
+// 	confetti.render()
+//   setTimeout(function() {
+//   	console.log('in')
+//     confetti.clear()
+//   }, 5000)
+// }
 const confettiSettings = { target: 'my-canvas' }
 const confetti = new ConfettiGenerator(confettiSettings)
 const canvas = $('#my-canvas')
+
 const confettiRain = function () {
   $('#my-canvas').show()
   confetti.render()
@@ -55,9 +67,6 @@ const confettiRain = function () {
   }, 5000)
 }
 
-const confettiRainReset = function () {
-  $('my-canvas').show()
-}
 
 const addHandlers = () => {
   $('#assignmentList').on('click', '.deleteButton', onDeleteAssignment)
@@ -72,5 +81,5 @@ module.exports = {
   onGetAssignments,
   onUpdateAssignment,
   addHandlers,
-  confettiRainReset
+  confettiRain
 }

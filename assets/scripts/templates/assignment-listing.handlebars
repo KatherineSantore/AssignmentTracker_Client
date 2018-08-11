@@ -29,15 +29,15 @@
               <form class="update-form" data-id="{{assignment.id}}">
                  <div class="form-group">
                   <label for="formGroupExampleInput">Title</label>
-                  <input name = "assignment[title]" value="{{assignment.title}}" type="text" data-id="{{assignment.id}}" class="form-control">
+                  <input name = "assignment[title]" value="{{assignment.title}}" type="text" data-id="{{assignment.id}}" class="form-control" required></input>
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput2">Description</label>
-                  <input  name ="assignment[description]" class="form-control" type="text" data-id="{{assignment.id}}" value="{{assignment.description}}"></input>
+                  <input  name ="assignment[description]" class="form-control" type="text" data-id="{{assignment.id}}" value="{{assignment.description}}" required></input>
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput3">Status</label>
-                  <input  name ="assignment[status]" class="form-control" type="text" data-id="{{assignment.id}}" value="{{assignment.status}}"></input>
+                  <input  name ="assignment[status]" class="form-control" type="text" data-id="{{assignment.id}}" value="{{assignment.status}}" required></input>
                 </div>
                 <div class="modal-footer">
                   <button type="submit" data-id="{{assignment.id}}"  class="updateSubmitButton btn btn-primary">Update</button>

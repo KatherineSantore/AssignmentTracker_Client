@@ -7,7 +7,7 @@
     "content": "CC­BY­NC­SA 4.0"
   },
   "dependencies": {
-    "confetti-js": "0.0.12",
+    "confetti-js": "0.0.13",
     "dom-confetti": "0.0.11",
     "jquery": "^3.3.1"
   },
