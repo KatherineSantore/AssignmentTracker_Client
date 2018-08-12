@@ -46,7 +46,6 @@ boxes and also have the assignment box show somehow that the user has finished.
 <ol>
 <li>Fork and clone this repository.</li>
 <li>Install dependencies with npm install.</li>
-<li><a href="https://www.npmjs.com/package/confetti-js">NPM install confetti-js.</a></li>
 </ol>
 
 A screenshot of the app looks like this:
